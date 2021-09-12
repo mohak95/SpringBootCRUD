@@ -46,5 +46,10 @@ public class HomeController {
 		return student;
 	}
 	
+	@PostMapping(value = "deleteStudent")
+	public Student deleteStudentTest(@RequestBody Student student) {
+		serviceImpl.deleteStudent(student);
+		return student;
+	}
 	
 }
